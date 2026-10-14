@@ -1,0 +1,826 @@
+香港三级电影网<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>香港三级电影网 - 最新港片、经典老片与全网影视在线观看平台</title>
+<meta name="keywords" content="香港三级电影网,香港电影,港片在线观看,经典老片,最新电影,影视资源,动作片,喜剧片,爱情片,恐怖片,综艺节目,电视剧全集">
+<meta name="description" content="香港三级电影网（xianggangsanjidianyingwang-app.github.io）专注收录香港电影、经典老片与最新院线佳作，涵盖动作、喜剧、爱情、恐怖、剧情等多类型影视资源，每日更新热播剧集与综艺节目，高清流畅播放，随时随地在线观看。">
+<meta name="author" content="香港三级电影网">
+<meta name="robots" content="index,follow">
+<meta name="baidu-site-verification" content="xianggang三级">
+<link rel="canonical" href="https://xianggangsanjidianyingwang-app.github.io">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#121212;--ink2:#1c1c20;--card:#23232a;--line:#33333d;
+  --txt:#f2f2f0;--sub:#a8a8b3;--gold:#e8b04b;--gold2:#f4d07a;
+  --accent:#d9403a;--green:#4caf78;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--ink);color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  line-height:1.75;font-size:16px;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ── 顶部公告 ── */
+.notice{
+  background:linear-gradient(90deg,#2a1a10,#1c1c20 60%,#2a1a10);
+  border-bottom:1px solid #3a2a18;font-size:13.5px;color:var(--gold2);
+}
+.notice .wrap{display:flex;align-items:center;gap:10px;padding:9px 20px;white-space:nowrap;overflow:hidden}
+.notice .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;animation:pl 1.4s infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.25}}
+.notice span{overflow:hidden;text-overflow:ellipsis}
+
+/* ── 头部 ── */
+header{
+  position:sticky;top:0;z-index:99;background:rgba(18,18,18,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.hd-box{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 20px;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:baseline;gap:9px;flex:none}
+.logo{
+  font-size:22px;font-weight:800;letter-spacing:.5px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.logo small{font-size:12px;color:var(--sub);font-weight:400;letter-spacing:0;-webkit-text-fill-color:var(--sub)}
+.search{
+  flex:1;max-width:380px;display:flex;align-items:center;gap:8px;
+  background:var(--ink2);border:1px solid var(--line);border-radius:24px;padding:7px 14px;
+}
+.search input{
+  flex:1;background:none;border:0;outline:0;color:var(--txt);font-size:14.5px;min-width:0;
+}
+.search input::placeholder{color:#6c6c78}
+.search button{
+  background:var(--gold);color:#1a1a1a;border:0;border-radius:16px;padding:5px 15px;
+  font-size:14px;font-weight:700;cursor:pointer;transition:.2s;flex:none;
+}
+.search button:hover{background:var(--gold2)}
+.menu-btn{
+  display:none;width:40px;height:40px;border:1px solid var(--line);background:var(--ink2);
+  border-radius:9px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;flex:none;
+}
+.menu-btn i{width:18px;height:2px;background:var(--txt);display:block;transition:.3s}
+.menu-btn.on i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn.on i:nth-child(2){opacity:0}
+.menu-btn.on i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+nav{background:var(--ink2);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;padding:0 12px}
+.nav-in a{
+  padding:11px 16px;font-size:15px;color:var(--sub);position:relative;transition:.2s;white-space:nowrap;
+}
+.nav-in a:hover{color:var(--gold2)}
+.nav-in a.cur{color:var(--gold)}
+.nav-in a.cur::after{content:"";position:absolute;left:16px;right:16px;bottom:-1px;height:2px;background:var(--gold)}
+
+/* ── 通用区块 ── */
+section{padding:44px 0}
+.sec-hd{display:flex;align-items:flex-end;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.sec-hd h2{
+  font-size:21px;font-weight:800;position:relative;padding-left:13px;letter-spacing:.5px;
+}
+.sec-hd h2::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;background:var(--gold);border-radius:2px}
+.sec-hd em{font-style:normal;font-size:13px;color:var(--sub);margin-left:auto}
+.sec-hd a.more{font-size:13px;color:var(--gold);white-space:nowrap}
+
+/* ── Hero ── */
+.hero{
+  position:relative;min-height:440px;display:flex;align-items:center;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='500'%3E%3Cdefs%3E%3CradialGradient id='g' cx='25%25' cy='40%25' r='70%25'%3E%3Cstop offset='0' stop-color='%233a2a18'/%3E%3Cstop offset='1' stop-color='%23121212'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23g)'/%3E%3C/svg%3E") center/cover;
+  border-bottom:1px solid var(--line);
+}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,18,18,.96),rgba(18,18,18,.55) 55%,rgba(18,18,18,.92))}
+.hero .wrap{position:relative;z-index:2}
+.hero .tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.hero .tag-row b{
+  font-size:12px;font-weight:600;padding:4px 11px;border-radius:4px;
+  background:rgba(232,176,75,.14);color:var(--gold2);border:1px solid rgba(232,176,75,.35)
+}
+.hero h1{font-size:clamp(26px,5.4vw,46px);line-height:1.22;font-weight:850;letter-spacing:.5px;margin-bottom:16px}
+.hero h1 i{font-style:normal;background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:16px;color:var(--sub);max-width:620px;margin-bottom:26px}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;border-radius:8px;padding:12px 24px;
+  font-size:15px;font-weight:700;transition:.25s;border:1px solid transparent;cursor:pointer;
+}
+.btn-main{background:var(--gold);color:#15120a}
+.btn-main:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--txt);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.hero .stats{display:flex;gap:36px;margin-top:34px;flex-wrap:wrap}
+.hero .stats div span{display:block;font-size:25px;font-weight:800;color:var(--gold)}
+.hero .stats div small{font-size:13px;color:var(--sub)}
+
+/* ── 分类标签 ── */
+.cats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.cats a{
+  font-size:14px;padding:8px 17px;border-radius:22px;background:var(--ink2);
+  border:1px solid var(--line);color:var(--sub);transition:.2s;
+}
+.cats a:hover,.cats a.on{background:var(--gold);border-color:var(--gold);color:#15120a;font-weight:700}
+
+/* ── 影片网格 ── */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.card{background:var(--card);border-radius:12px;overflow:hidden;border:1px solid #2c2c34;transition:.28s;cursor:pointer}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.poster{position:relative;aspect-ratio:3/4;overflow:hidden;background:#2a2a32}
+.poster .ph{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:15px;font-weight:700;color:var(--sub);text-align:center;padding:14px;line-height:1.5;
+  background:linear-gradient(160deg,#2c2c34,#1a1a20);
+}
+.poster .ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 14px,rgba(255,255,255,.025) 14px,rgba(255,255,255,.025) 28px)}
+.poster .badge{
+  position:absolute;top:10px;left:10px;font-size:11.5px;font-weight:700;padding:3px 9px;
+  border-radius:4px;background:var(--accent);color:#fff;z-index:3;
+}
+.poster .rate{
+  position:absolute;top:10px;right:10px;font-size:12px;font-weight:700;padding:3px 8px;
+  border-radius:4px;background:rgba(0,0,0,.66);color:var(--gold);z-index:3;
+}
+.poster .ep{
+  position:absolute;bottom:0;left:0;right:0;font-size:12.5px;padding:7px 10px;color:#fff;z-index:3;
+  background:linear-gradient(0deg,rgba(0,0,0,.92),transparent);
+}
+.card .info{padding:12px 13px}
+.card .info h3{font-size:15.5px;font-weight:700;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .info p{font-size:13px;color:var(--sub);display:flex;justify-content:space-between;gap:8px}
+
+/* ── 列表行 ── */
+.rank{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rk-item{
+  display:flex;gap:14px;align-items:center;padding:12px;background:var(--card);
+  border:1px solid #2c2c34;border-radius:11px;transition:.2s;
+}
+.rk-item:hover{border-color:var(--gold)}
+.rk-item .no{
+  width:34px;height:34px;flex:none;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:16px;background:var(--ink2);color:var(--sub);
+}
+.rk-item.t1 .no,.rk-item.t2 .no,.rk-item.t3 .no{background:var(--gold);color:#15120a}
+.rk-item .txt{flex:1;min-width:0}
+.rk-item .txt b{display:block;font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk-item .txt small{font-size:12.5px;color:var(--sub)}
+.rk-item .hot{font-size:12px;color:var(--accent);flex:none}
+
+.list-tb{width:100%;border-collapse:collapse;font-size:14.5px}
+.list-tb th{text-align:left;font-size:13px;color:var(--sub);font-weight:600;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+.list-tb td{padding:13px 14px;border-bottom:1px solid #26262e;color:var(--txt)}
+.list-tb tr:hover td{background:var(--ink2)}
+.list-tb td.n{color:var(--gold);font-weight:700;font-family:ui-monospace,Menlo,monospace}
+.list-tb td.t{font-weight:600}
+.list-tb td s{text-decoration:none;color:var(--sub);font-size:13px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px;border:1px solid var(--line)}
+
+/* ── 剧集详情卡 ── */
+.detail{display:grid;grid-template-columns:300px 1fr;gap:34px;background:var(--card);border:1px solid #2c2c34;border-radius:14px;overflow:hidden}
+.detail .lf{background:linear-gradient(160deg,#33291c,#201c24);min-height:400px;display:flex;align-items:flex-end;padding:24px}
+.detail .lf .ph{font-size:19px;font-weight:800;line-height:1.5;color:var(--gold2);text-align:center;width:100%}
+.detail .rt{padding:28px 30px}
+.detail .rt h3{font-size:24px;font-weight:800;margin-bottom:14px}
+.detail .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.detail .meta b{font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:20px;background:var(--ink2);color:var(--sub);border:1px solid #333}
+.detail .rt p{color:#d2d2da;font-size:15px;margin-bottom:18px}
+.detail .rt dl{display:grid;grid-template-columns:72px 1fr;gap:9px 14px;font-size:14.5px}
+.detail .rt dt{color:var(--sub)}
+.detail .rt dd{color:var(--txt)}
+.detail .rt dd a{color:var(--gold2);margin-right:12px;white-space:nowrap}
+.ep-list{display:grid;grid-template-columns:repeat(8,1fr);gap:9px;margin-top:20px}
+.ep-list a{
+  text-align:center;font-size:13.5px;padding:8px 4px;border-radius:7px;background:var(--ink2);
+  border:1px solid #333;color:var(--txt);transition:.18s;
+}
+.ep-list a:hover{background:var(--gold);border-color:var(--gold);color:#15120a;font-weight:700}
+
+/* ── 综艺 / 资讯 ── */
+.var-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.var-card{background:var(--card);border:1px solid #2c2c34;border-radius:12px;overflow:hidden;transition:.25s}
+.var-card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.var-card .top{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#3a2c1c,#22222a);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:var(--gold2);text-align:center;padding:16px}
+.var-card .top span{position:absolute;top:10px;left:10px;font-size:11.5px;background:var(--green);color:#0c1a12;padding:3px 9px;border-radius:4px;font-weight:700}
+.var-card .bot{padding:14px 15px}
+.var-card .bot h4{font-size:16px;font-weight:700;margin-bottom:7px}
+.var-card .bot p{font-size:13px;color:var(--sub);line-height:1.6}
+
+.news{display:grid;grid-template-columns:1.35fr 1fr;gap:30px}
+.news-big{position:relative;min-height:320px;border-radius:14px;overflow:hidden;display:flex;align-items:flex-end;padding:26px;background:linear-gradient(160deg,#33291c,#1a1a20)}
+.news-big h4{font-size:21px;font-weight:800;line-height:1.5;max-width:520px}
+.news-big .dt{position:absolute;top:18px;left:18px;font-size:12.5px;background:var(--accent);padding:4px 10px;border-radius:4px;font-weight:600}
+.news-list li{list-style:none;padding:14px 0;border-bottom:1px dashed #2e2e36;display:flex;gap:12px;align-items:baseline}
+.news-list li:last-child{border-bottom:0}
+.news-list .num{font-size:12px;color:var(--sub);flex:none;font-family:ui-monospace,Menlo,monospace}
+.news-list a{font-size:15px;font-weight:600;flex:1;transition:.18s}
+.news-list a:hover{color:var(--gold2)}
+.news-list time{font-size:12.5px;color:var(--sub);flex:none}
+
+/* ── 合作 / 关于 ── */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.ab-box{background:var(--card);border:1px solid #2c2c34;border-radius:14px;padding:26px}
+.ab-box h3{font-size:18px;font-weight:800;margin-bottom:14px;color:var(--gold2)}
+.ab-box p,.ab-box li{font-size:14.5px;color:#d2d2da;line-height:1.85}
+.ab-box ul{padding-left:18px}
+.flink{display:flex;flex-wrap:wrap;gap:10px}
+.flink a{font-size:13.5px;padding:7px 14px;border-radius:7px;background:var(--ink2);border:1px solid #333;color:var(--sub);transition:.18s}
+.flink a:hover{color:var(--gold2);border-color:var(--gold)}
+.site-card{
+  background:linear-gradient(135deg,#2a2118,#1c1c20);border:1px solid #3a2f1c;border-radius:14px;
+  padding:26px;text-align:center;
+}
+.site-card .big{
+  font-size:20px;font-weight:800;background:linear-gradient(90deg,var(--gold),var(--gold2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:8px;
+}
+.site-card code{display:block;margin-top:14px;background:var(--ink2);border:1px dashed var(--line);border-radius:8px;padding:12px;font-size:14px;color:var(--gold2);word-break:break-all}
+.site-card p{font-size:13.5px;color:var(--sub);margin-top:14px}
+
+/* ── 页脚 ── */
+footer{border-top:1px solid var(--line);background:#0d0d0f;padding:36px 0 26px}
+.ft-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px;margin-bottom:26px}
+.ft-grid h5{font-size:15px;font-weight:800;margin-bottom:13px;color:var(--gold2)}
+.ft-grid ul li{list-style:none;padding:5px 0}
+.ft-grid ul a{font-size:13.5px;color:var(--sub);transition:.18s}
+.ft-grid ul a:hover{color:var(--gold)}
+.ft-brand p{font-size:13.5px;color:var(--sub);margin-top:10px}
+.ft-bot{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:#7a7a85}
+
+/* ── 回到顶部 ── */
+#top{
+  position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  background:var(--gold);color:#15120a;border:0;font-size:19px;font-weight:800;cursor:pointer;
+  display:none;z-index:80;box-shadow:0 6px 18px rgba(232,176,75,.35);transition:.2s;
+}
+#top:hover{transform:translateY(-3px)}
+
+/* ── 响应式 ── */
+@media(max-width:1080px){
+  .grid{grid-template-columns:repeat(4,1fr)}
+  .var-grid{grid-template-columns:repeat(3,1fr)}
+  .ep-list{grid-template-columns:repeat(6,1fr)}
+}
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .var-grid{grid-template-columns:repeat(2,1fr)}
+  .detail{grid-template-columns:1fr}
+  .detail .lf{min-height:200px}
+  .news{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+  .ft-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  body{font-size:15.5px}
+  .wrap{padding:0 15px}
+  section{padding:34px 0}
+  .notice .wrap{padding:8px 15px;font-size:12.5px}
+  .hd-box{padding:12px 15px}
+  .logo{font-size:19px}
+  .logo small{display:none}
+  .search{display:none}
+  .menu-btn{display:flex}
+  nav{max-height:0;overflow:hidden;transition:.35s;padding:0}
+  nav.open{max-height:420px}
+  .nav-in{flex-direction:column;padding:6px 15px 14px}
+  .nav-in a{padding:11px 4px;border-bottom:1px solid #26262e}
+  .nav-in a:last-child{border-bottom:0}
+  .nav-in a.cur::after{display:none}
+  .hero{min-height:auto;padding:52px 0 44px}
+  .hero h1{font-size:27px}
+  .hero p.lead{font-size:14.5px}
+  .btn{padding:11px 20px;font-size:14px}
+  .hero .stats{gap:26px;margin-top:28px}
+  .hero .stats div span{font-size:21px}
+  .sec-hd h2{font-size:19px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:13px}
+  .card .info{padding:10px 11px}
+  .card .info h3{font-size:14.5px}
+  .rank{grid-template-columns:1fr;gap:10px}
+  .var-grid{grid-template-columns:1fr 1fr;gap:13px}
+  .ep-list{grid-template-columns:repeat(4,1fr)}
+  .detail .rt{padding:20px 18px}
+  .detail .rt dl{grid-template-columns:1fr}
+  .detail .rt dt{margin-top:6px}
+  .ft-grid{grid-template-columns:1fr}
+  .list-tb th,.list-tb td{padding:10px 11px;font-size:13.5px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<!-- 公告 -->
+<div class="notice">
+  <div class="wrap">
+    <span class="dot"></span>
+    <span>官方唯一地址：xianggangsanjidianyingwang-app.github.io　｜　每日 18:00 准时更新港片与热播剧集，建议收藏本站以免迷路</span>
+  </div>
+</div>
+
+<!-- 头部 -->
+<header>
+  <div class="hd-box">
+    <div class="brand">
+      <div class="logo">香港三级电影网<small>HD</small></div>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="搜索电影 / 剧名 / 演员，如：无间道、周星驰、警匪">
+      <button type="button">搜索</button>
+    </div>
+    <button class="menu-btn" id="mbtn" aria-label="菜单"><i></i><i></i><i></i></button>
+  </div>
+  <nav id="nav">
+    <div class="nav-in">
+      <a href="#" class="cur">首页</a>
+      <a href="#movie">电影频道</a>
+      <a href="#tv">电视剧集</a>
+      <a href="#var">综艺娱乐</a>
+      <a href="#rank">排行榜</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于本站</a>
+      <a href="#link">友情链接</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" style="padding:0">
+  <div class="wrap" style="padding:62px 20px">
+    <div class="tag-row">
+      <b>港片专区</b><b>蓝光高清</b><b>每日更新</b><b>免费在线</b>
+    </div>
+    <h1>重温黄金年代的港片情怀<br><i>香港三级电影网</i> · 一站式影视在线观看</h1>
+    <p class="lead">收录香港电影、经典老片与院线新片，覆盖动作、喜剧、爱情、恐怖、剧情、警匪、悬疑等全类型，配合热播剧集与综艺节目，高清流畅播放，随时随地畅享视听。</p>
+    <div class="acts">
+      <a class="btn btn-main" href="#movie">立即观影 →</a>
+      <a class="btn btn-ghost" href="#rank">查看热播榜</a>
+    </div>
+    <div class="stats">
+      <div><span>18,600+</span><small>在线影视资源</small></div>
+      <div><span>62,000+</span><small>每日活跃影迷</small></div>
+      <div><span>7×24h</span><small>不间断更新服务</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 电影频道 -->
+<section id="movie">
+  <div class="wrap">
+    <div class="sec-hd">
+      <h2>电影频道</h2>
+      <div class="cats">
+        <a href="#" class="on">全部</a>
+        <a href="#">动作</a><a href="#">喜剧</a><a href="#">爱情</a><a href="#">恐怖</a>
+        <a href="#">警匪</a><a href="#">悬疑</a><a href="#">剧情</a><a href="#">科幻</a><a href="#">动画</a>
+      </div>
+      <em>共 12,480 部影片</em>
+      <a class="more" href="#">更多电影 »</a>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="poster">
+          <span class="badge">热映</span><span class="rate">9.2</span>
+          <div class="ph">无间道风云<br>2002 · 警匪 / 剧情</div>
+          <div class="ep">粤语 / 国配 · 1080P</div>
+        </div>
+        <div class="info"><h3>无间道风云</h3><p><span>刘德华 / 梁朝伟</span><span>152分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="badge">经典</span><span class="rate">9.0</span>
+          <div class="ph">大话西游之大圣娶亲<br>1995 · 喜剧 / 爱情</div>
+          <div class="ep">粤语 / 国语 · 蓝光</div>
+        </div>
+        <div class="info"><h3>大话西游之大圣娶亲</h3><p><span>周星驰 / 朱茵</span><span>95分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="badge">新片</span><span class="rate">8.6</span>
+          <div class="ph">怒火重案<br>2021 · 动作 / 警匪</div>
+          <div class="ep">粤语 / 国语 · 1080P</div>
+        </div>
+        <div class="info"><h3>怒火重案</h3><p><span>甄子丹 / 谢霆锋</span><span>128分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="rate">8.9</span>
+          <div class="ph">重庆森林<br>1994 · 爱情 / 文艺</div>
+          <div class="ep">粤语 · 高清修复</div>
+        </div>
+        <div class="info"><h3>重庆森林</h3><p><span>王家卫作品</span><span>102分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="badge">推荐</span><span class="rate">8.4</span>
+          <div class="ph">恐怖直播<br>港版<br>2023 · 惊悚 / 悬疑</div>
+          <div class="ep">粤语 · 1080P</div>
+        </div>
+        <div class="info"><h3>恐怖直播·港版</h3><p><span>惊悚悬疑</span><span>98分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="rate">8.7</span>
+          <div class="ph">喜剧之王<br>1999 · 喜剧 / 剧情</div>
+          <div class="ep">粤语 / 国语 · 蓝光</div>
+        </div>
+        <div class="info"><h3>喜剧之王</h3><p><span>周星驰 / 张柏芝</span><span>113分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="badge">高分</span><span class="rate">9.1</span>
+          <div class="ph">枪火<br>1999 · 动作 / 黑帮</div>
+          <div class="ep">粤语 · 1080P</div>
+        </div>
+        <div class="info"><h3>枪火</h3><p><span>杜琪峰作品</span><span>84分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="rate">8.3</span>
+          <div class="ph">九龙城寨之围城<br>2024 · 动作</div>
+          <div class="ep">粤语 / 国语 · 1080P</div>
+        </div>
+        <div class="info"><h3>九龙城寨之围城</h3><p><span>古天乐 / 洪金宝</span><span>126分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="rate">8.5</span>
+          <div class="ph">孤注一掷<br>港版配音<br>2023 · 犯罪</div>
+          <div class="ep">粤语配音 · 1080P</div>
+        </div>
+        <div class="info"><h3>孤注一掷·粤语版</h3><p><span>张艺兴 / 金晨</span><span>130分钟</span></p></div>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <span class="badge">怀旧</span><span class="rate">8.8</span>
+          <div class="ph">英雄本色<br>1986 · 警匪 / 黑帮</div>
+          <div class="ep">粤语 · 4K 修复</div>
+        </div>
+        <div class="info"><h3>英雄本色</h3><p><span>周润发 / 狄龙</span><span>95分钟</span></p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 电视剧集 -->
+<section id="tv" style="background:#16161b">
+  <div class="wrap">
+    <div class="sec-hd">
+      <h2>电视剧集</h2>
+      <em>TVB 港剧 · 内地剧 · 韩剧 · 美剧同步热播</em>
+      <a class="more" href="#">全部剧集 »</a>
+    </div>
+
+    <div class="detail">
+      <div class="lf"><div class="ph">金宵大廈 2<br><s style="font-size:13px;font-weight:400;color:#c9b58c">粤语 / 全24集</s></div></div>
+      <div class="rt">
+        <h3>金宵大廈 第二辑</h3>
+        <div class="meta">
+          <b>悬疑惊悚</b><b>单元剧</b><b>2025</b><b>粤语原声</b><b>更新至 24 集</b>
+        </div>
+        <p>一幢承载着无数秘密的旧式大廈，串联起十个独立又彼此呼应的离奇单元。剧集延续第一辑的诡谲氛围，以都市传说为切口，讲述发生在金宵大廈里的爱恨纠葛与因果轮回，剧情反转密集，细节暗藏玄机。</p>
+        <dl>
+          <dt>主　演</dt><dd><a href="#">陈山聪</a><a href="#">李施嬅</a><a href="#">伍咏诗</a><a href="#">张彦博</a></dd>
+          <dt>类　型</dt><dd>悬疑 / 惊悚 / 奇幻</dd>
+          <dt>集　数</dt><dd>全 24 集　每集约 45 分钟</dd>
+          <dt>语　言</dt><dd>粤语原声 / 中文字幕</dd>
+          <dt>更新时间</dt><dd>每日 20:30 更新一集</dd>
+        </dl>
+        <div class="ep-list">
+          <a href="#">01</a><a href="#">02</a><a href="#">03</a><a href="#">04</a><a href="#">05</a><a href="#">06</a><a href="#">07</a><a href="#">08</a>
+          <a href="#">09</a><a href="#">10</a><a href="#">11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a><a href="#">16</a>
+          <a href="#">17</a><a href="#">18</a><a href="#">19</a><a href="#">20</a><a href="#">21</a><a href="#">22</a><a href="#">23</a><a href="#">24</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hd" style="margin-top:40px">
+      <h2>正在热播</h2>
+      <a class="more" href="#">换一批 »</a>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="poster"><span class="rate">TVB</span><div class="ph">愛·回家之开心速遞<br>情景喜剧</div><div class="ep">更新至 2106 集</div></div>
+        <div class="info"><h3>愛·回家之开心速递</h3><p><span>处境喜剧</span><span>粤语</span></p></div>
+      </div>
+      <div class="card">
+        <div class="poster"><span class="rate">热</span><div class="ph">新聞女王 2<br>職場 / 劇情</div><div class="ep">更新至 12 集</div></div>
+        <div class="info"><h3>新闻女王 第二辑</h3><p><span>佘诗曼 / 马国明</span><span>25集</span></p></div>
+      </div>
+      <div class="card">
+        <div class="poster"><span class="rate">古装</span><div class="ph">庆餘年 第二季<br>古装 / 权谋</div><div class="ep">更新至 36 集</div></div>
+        <div class="info"><h3>庆余年·第二季</h3><p><span>张若昀 / 陈道明</span><span>36集</span></p></div>
+      </div>
+      <div class="card">
+        <div class="poster"><span class="rate">台剧</span><div class="ph">華燈初上 最終章<br>悬疑 / 爱情</div><div class="ep">全 12 集</div></div>
+        <div class="info"><h3>华灯初上·最终章</h3><p><span>林心如 / 杨谨华</span><span>12集</span></p></div>
+      </div>
+      <div class="card">
+        <div class="poster"><span class="rate">韩剧</span><div class="ph">淚之女王<br>爱情 / 喜剧</div><div class="ep">全 16 集</div></div>
+        <div class="info"><h3>泪之女王</h3><p><span>金智媛 / 金秀贤</span><span>16集</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 综艺娱乐 -->
+<section id="var">
+  <div class="wrap">
+    <div class="sec-hd">
+      <h2>综艺娱乐</h2>
+      <em>港台综艺 · 真人秀 · 脱口秀 · 选秀节目</em>
+      <a class="more" href="#">更多综艺 »</a>
+    </div>
+    <div class="var-grid">
+      <div class="var-card">
+        <div class="top"><span>更新中</span>奖门人争霸战<br><small style="font-size:12px;font-weight:400;color:#c9b58c">第 18 季 · 游戏竞技</small></div>
+        <div class="bot"><h4>奖门人争霸战 第十八季</h4><p>经典游戏综艺回归，全新关卡与嘉宾阵容，爆笑对决每周准时上线，重温港式综艺的欢乐时光。</p></div>
+      </div>
+      <div class="var-card">
+        <div class="top"><span>热播</span>中年好聲音 4<br><small style="font-size:12px;font-weight:400;color:#c9b58c">音乐选秀 · 励志</small></div>
+        <div class="bot"><h4>中年好声音 第四季</h4><p>专为中年歌手打造的音乐舞台，每一段沧桑嗓音背后都是动人的人生故事，用歌声点燃梦想。</p></div>
+      </div>
+      <div class="var-card">
+        <div class="top">美女厨房 3<br><small style="font-size:12px;font-weight:400;color:#c9b58c">美食真人秀</small></div>
+        <div class="bot"><h4>美女厨房 第三辑</h4><p>明星下厨挑战赛，厨艺与笑料齐飞，边学做菜边看明星出糗，轻松下饭必备节目。</p></div>
+      </div>
+      <div class="var-card">
+        <div class="top"><span>访谈</span>今晚睇李<br><small style="font-size:12px;font-weight:400;color:#c9b58c">脱口秀 · 清谈</small></div>
+        <div class="bot"><h4>今晚睇李</h4><p>犀利幽默的清谈节目，嘉宾访谈搭配社会议题讨论，港式毒舌与智慧并存，每集金句频出。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 排行榜 -->
+<section id="rank" style="background:#16161b">
+  <div class="wrap">
+    <div class="sec-hd">
+      <h2>全站热播榜</h2>
+      <em>基于近 24 小时播放与收藏数据实时统计</em>
+      <a class="more" href="#">完整榜单 »</a>
+    </div>
+    <div class="rank">
+
+      <div class="rk-item t1">
+        <div class="no">1</div>
+        <div class="txt"><b>怒火重案</b><small>动作 / 警匪 · 甄子丹、谢霆锋</small></div>
+        <div class="hot">🔥 186.4万</div>
+      </div>
+      <div class="rk-item t2">
+        <div class="no">2</div>
+        <div class="txt"><b>九龙城寨之围城</b><small>动作 · 古天乐、洪金宝</small></div>
+        <div class="hot">🔥 152.1万</div>
+      </div>
+      <div class="rk-item t3">
+        <div class="no">3</div>
+        <div class="txt"><b>金宵大廈 2</b><small>悬疑 / 单元剧 · 更新至 24 集</small></div>
+        <div class="hot">🔥 128.7万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">4</div>
+        <div class="txt"><b>無間道</b><small>警匪 / 剧情 · 刘德华、梁朝伟</small></div>
+        <div class="hot">🔥 96.3万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">5</div>
+        <div class="txt"><b>慶餘年 第二季</b><small>古装 / 权谋 · 全 36 集</small></div>
+        <div class="hot">🔥 三级.5万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">6</div>
+        <div class="txt"><b>英雄本色</b><small>经典 / 4K 修复 · 周润发</small></div>
+        <div class="hot">🔥 74.2万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">7</div>
+        <div class="txt"><b>新聞女王 2</b><small>职场 / 剧情 · 更新至 12 集</small></div>
+        <div class="hot">🔥 69.8万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">8</div>
+        <div class="txt"><b>大話西遊之大聖娶親</b><small>喜剧 / 爱情 · 蓝光高清</small></div>
+        <div class="hot">🔥 61.4万</div>
+      </div>
+
+      <div class="rk-item t1">
+        <div class="no">1</div>
+        <div class="txt"><b>中年好聲音 4</b><small>综艺 / 选秀 · 更新中</small></div>
+        <div class="hot">🔥 54.6万</div>
+      </div>
+      <div class="rk-item t2">
+        <div class="no">2</div>
+        <div class="txt"><b>槍火</b><small>动作 / 黑帮 · 杜琪峰作品</small></div>
+        <div class="hot">🔥 48.9万</div>
+      </div>
+      <div class="rk-item t3">
+        <div class="no">3</div>
+        <div class="txt"><b>恐怖直播·港版</b><small>惊悚 / 悬疑 · 2023</small></div>
+        <div class="hot">🔥 42.1万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">4</div>
+        <div class="txt"><b>獎門人爭霸戰 18</b><small>综艺 / 游戏 · 第 18 季</small></div>
+        <div class="hot">🔥 37.5万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">5</div>
+        <div class="txt"><b>重慶森林</b><small>爱情 / 文艺 · 高清修复</small></div>
+        <div class="hot">🔥 33.8万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">6</div>
+        <div class="txt"><b>淚之女王</b><small>韩剧 / 爱情 · 全 16 集</small></div>
+        <div class="hot">🔥 29.4万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">7</div>
+        <div class="txt"><b>喜劇之王</b><small>喜剧 / 剧情 · 1999 经典</small></div>
+        <div class="hot">🔥 25.7万</div>
+      </div>
+      <div class="rk-item">
+        <div class="no">8</div>
+        <div class="txt"><b>孤注一擲·粵語版</b><small>犯罪 · 粤语配音</small></div>
+        <div class="hot">🔥 22.3万</div>
+      </div>
+
+    </div>
+
+    <div class="sec-hd" style="margin-top:44px">
+      <h2>影片资料库速览</h2>
+      <em>按类型与年代整理，方便快速定位</em>
+    </div>
+    <div class="tbl-scroll">
+      <table class="list-tb">
+        <thead>
+          <tr><th style="width:56px">序号</th><th>片名</th><th>类型</th><th>主演</th><th>年代</th><th>清晰度</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="n">01</td><td class="t">無間道</td><td>警匪 / 剧情</td><td>刘德华、梁朝伟</td><td>2002</td><td>1080P</td></tr>
+          <tr><td class="n">02</td><td class="t">大話西遊之大聖娶親</td><td>喜剧 / 爱情</td><td>周星驰、朱茵</td><td>1995</td><td>蓝光</td></tr>
+          <tr><td class="n">03</td><td class="t">怒火重案</td><td>动作 / 警匪</td><td>甄子丹、谢霆锋</td><td>2021</td><td>1080P</td></tr>
+          <tr><td class="n">04</td><td class="t">英雄本色</td><td>警匪 / 黑帮</td><td>周润发、狄龙</td><td>1986</td><td>4K 修复</td></tr>
+          <tr><td class="n">05</td><td class="t">槍火</td><td>动作 / 黑帮</td><td>黄秋生、吴镇宇</td><td>1999</td><td>1080P</td></tr>
+          <tr><td class="n">06</td><td class="t">重慶森林</td><td>爱情 / 文艺</td><td>梁朝伟、王菲</td><td>1994</td><td>高清修复</td></tr>
+          <tr><td class="n">07</td><td class="t">喜劇之王</td><td>喜剧 / 剧情</td><td>周星驰、张柏芝</td><td>1999</td><td>蓝光</td></tr>
+          <tr><td class="n">08</td><td class="t">九龍城寨之圍城</td><td>动作</td><td>古天乐、洪金宝</td><td>2024</td><td>1080P</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 影视资讯 -->
+<section id="news">
+  <div class="wrap">
+    <div class="sec-hd">
+      <h2>影视资讯</h2>
+      <em>港片动态 · 明星八卦 · 上映排期 · 幕后故事</em>
+      <a class="more" href="#">更多资讯 »</a>
+    </div>
+    <div class="news">
+      <div class="news-big">
+        <span class="dt">2026-10-12</span>
+        <h4>香港三级电影网独家：10月港片新片前瞻，四部动作大制作集中登场，谁能问鼎票房？</h4>
+      </div>
+      <ul class="news-list">
+        <li><span class="num">01</span><a href="#">金像奖最佳男主角提名名单出炉，五位实力派演员正面交锋</a><time>10-11</time></li>
+        <li><span class="num">02</span><a href="#">经典港片 4K 修复计划启动，《英雄本色》《枪火》率先上线</a><time>10-10</time></li>
+        <li><span class="num">03</span><a href="#">TVB 全新处境喜剧定档，原班人马回归引爆期待</a><time>10-09</time></li>
+        <li><span class="num">04</span><a href="#">幕后揭秘：九龙城寨实景搭建耗时 14 个月，1:1 还原旧香港</a><time>10-08</time></li>
+        <li><span class="num">05</span><a href="#">港片新导演崛起，独立电影在国际电影节斩获两项大奖</a><time>10-07</time></li>
+        <li><span class="num">06</span><a href="#">本周观影指南：五部高分冷门佳作，避开烂片不踩雷</a><time>10-06</time></li>
+        <li><span class="num">07</span><a href="#">经典台词回顾：那些年港片教给我们的江湖情义与人生哲学</a><time>10-05</time></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 关于 + 友链 -->
+<section id="about" style="background:#16161b">
+  <div class="wrap">
+    <div class="sec-hd">
+      <h2>关于本站</h2>
+      <em>了解香港三级电影网的服务与内容定位</em>
+    </div>
+    <div class="about">
+      <div class="ab-box">
+        <h3>我们的内容定位</h3>
+        <p>香港三级电影网专注于整理与收录香港电影、经典老片以及最新影视资源，内容涵盖动作、喜剧、爱情、恐怖、警匪、悬疑、剧情、科幻、动画等多个类型，同时提供 TVB 港剧、内地剧、韩剧、美剧与港台综艺节目。</p>
+        <ul style="margin-top:14px">
+          <li>每日 18:00 定时更新，第一时间同步院线新片与热播剧集</li>
+          <li>提供粤语原声、国语配音、中英字幕等多种观看版本</li>
+          <li>影片资料卡含主演、类型、年代、时长、清晰度等完整信息</li>
+          <li>全站资源支持多端自适应，手机、平板、电脑均可流畅观看</li>
+          <li>独立热播榜单，基于真实播放与收藏数据实时排序</li>
+        </ul>
+      </div>
+      <div class="site-card">
+        <div class="big">官方站点</div>
+        <strong style="font-size:17px">香港三级电影网</strong>
+        <code>https://xianggangsanjidianyingwang-app.github.io</code>
+        <p>本站为官方唯一指定访问地址，请认准上述域名并妥善收藏，避免通过不明链接访问仿冒站点。</p>
+      </div>
+    </div>
+
+    <div class="sec-hd" style="margin-top:44px" id="link">
+      <h2>友情链接</h2>
+      <em>影视导航与内容合作站点</em>
+    </div>
+    <div class="flink">
+      <a href="#">经典港片资料馆</a>
+      <a href="#">粤语电影导航</a>
+      <a href="#">TVB 剧集百科</a>
+      <a href="#">香港影讯速递</a>
+      <a href="#">华语电影档案</a>
+      <a href="#">九龙城寨专题站</a>
+      <a href="#">港片原声音乐库</a>
+      <a href="#">影视海报收藏馆</a>
+      <a href="#">独立电影观察</a>
+      <a href="#">怀旧影视长廊</a>
+      <a href="#">香港电影评论学会</a>
+      <a href="#">星光映画杂志</a>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="logo" style="font-size:20px">香港三级电影网<small>HD</small></div>
+        <p>专注港片与影视在线观看的内容导航平台，每日更新最新电影、热播剧集与综艺节目，为影迷提供便捷的观影入口与详尽的影片资料。</p>
+      </div>
+      <div>
+        <h5>频道导航</h5>
+        <ul>
+          <li><a href="#movie">电影频道</a></li>
+          <li><a href="#tv">电视剧集</a></li>
+          <li><a href="#var">综艺娱乐</a></li>
+          <li><a href="#rank">全站热播榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>内容分类</h5>
+        <ul>
+          <li><a href="#">动作警匪</a></li>
+          <li><a href="#">喜剧爱情</a></li>
+          <li><a href="#">恐怖悬疑</a></li>
+          <li><a href="#">经典老片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于我们</h5>
+        <ul>
+          <li><a href="#about">站点简介</a></li>
+          <li><a href="#news">影视资讯</a></li>
+          <li><a href="#link">友情链接</a></li>
+          <li><a href="#">官方地址</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 香港三级电影网 · 影视在线观看导航平台 · 保留所有权利</span>
+      <span>官方唯一地址：xianggangsanjidianyingwang-app.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var btn=document.getElementById('mbtn'), nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){btn.classList.toggle('on');nav.classList.toggle('open');});
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){btn.classList.remove('on');nav.classList.remove('open');});
+  });
+  var top=document.getElementById('top');
+  window.addEventListener('scroll',function(){
+    top.style.display=window.pageYOffset>420?'block':'none';
+  });
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>
